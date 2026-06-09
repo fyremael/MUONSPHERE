@@ -28,14 +28,7 @@ pip install -e .
 ## Smoke tests
 
 ```bash
-python -m ngpt_modulus.muonsphere_atomregistry --run_tests
-python -m ngpt_modulus.peft_lora_constraints --run_tests
-```
-
-Or:
-
-```bash
-pytest -q
+python -m pytest -q
 ```
 
 ## Demos
@@ -48,12 +41,13 @@ python examples/train_peft_lora_demo.py --steps 50 --retract_every 10
 ## Repository layout
 
 ```text
-src/ngpt_modulus/muonsphere_atomregistry.py     # MuonSphere + AtomBuilder registry
-src/ngpt_modulus/peft_lora_constraints.py      # LoRA + PEFT spectral constraints
-examples/                                      # runnable demos
-tests/                                         # CPU smoke tests
-configs/                                       # starter configs
-docs/                                         # spec, run matrix, metrics, integration guide
+src/muonsphere/atom.py       # Atomic2DView and AtomBuilder registry
+src/muonsphere/optim.py      # MuonSphere optimizer
+src/muonsphere/peft.py       # LoRA + PEFT spectral constraints
+examples/                    # runnable demos
+tests/                       # CPU smoke tests
+configs/                     # starter configs
+docs/                        # spec, run matrix, metrics, integration guide
 ```
 
 ## Status
