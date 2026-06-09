@@ -1,0 +1,12 @@
+experiment: peft_lora_constraints_demo
+steps: 1000
+lora:
+  r: 8
+  alpha: 16.0
+constraints:
+  c_radius: 1.0
+  retract_every: 10
+  power_niter: 3
+optimizer:
+  lr: 0.0002
+  weight_decay: 0.05
