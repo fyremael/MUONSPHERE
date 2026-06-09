@@ -1,0 +1,10 @@
+experiment: muonsphere_demo
+steps: 1000
+batch_size: 32
+seq_len: 256
+optimizer:
+  c_radius: 1.0
+  atomic_qkv_per_head: true
+  power_niter: 2
+  msign_niter: 5
+  tangent_mode: false
