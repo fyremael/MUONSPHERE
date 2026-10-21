@@ -1,0 +1,29 @@
+{
+  "steps": 260,
+  "batch": 32,
+  "span": 20,
+  "width": 96,
+  "layers": 2,
+  "heads": 4,
+  "seed": 20261021,
+  "log_every": 20,
+  "eval_batches": 4,
+  "arms": [
+    "adamw",
+    "muon_frob",
+    "muon_s4",
+    "muon_s4_conc",
+    "muon_s4_null",
+    "muon_s4_null_conc"
+  ],
+  "lambda_conc": 10.0,
+  "adam_lr": 0.001,
+  "muon_lr": 0.02,
+  "out": "/content/gcl_s4_sink_results",
+  "wandb_mode": "offline",
+  "self_test": false,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "utc": "2026-10-21T11:18:57Z"
+}
