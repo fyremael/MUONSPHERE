@@ -1,0 +1,44 @@
+{
+  "arms": [
+    "adamw",
+    "muon_frob",
+    "muon_s4",
+    "muon_s4_conc",
+    "muon_s4_null",
+    "muon_s4_null_conc"
+  ],
+  "colab_run_source_sha256": "abf75a07cba8873ff038b12571760d354fcf95b97ccae52b16e2c5bab6a4092b",
+  "colab_session": "gcl-stress-big-1021",
+  "completed_arm_seed_runs": 18,
+  "completion_exit_code": 0,
+  "files_sha256": {
+    "docs/attention_sink_s4_stress_protocol.md": "66c57b88a0d8aa5c02ffc2c991cd92091b38003b9e50fe91aece3c8c039f4f0d",
+    "docs/attention_sink_s4_stress_results_20261021.md": "b8af973830f0a1246caeb401435af953a4339068e44786ad5357ed0f6cabd00c",
+    "docs/data/attention_sink_s4_stress_20261021_analysis.json": "bf558ecf4c747deb6daa00229744d3fa9e4ad6fc7412dcd296419ba762b641c6",
+    "docs/data/attention_sink_s4_stress_20261021_calibration.json": "25c8dafef0e86ed1d9f8e0cdffbbf35bd58390a534ca78eb58b0d5fed3898890",
+    "docs/data/attention_sink_s4_stress_20261021_config.json": "55a781cb5b9de0ab1a4e7825be2c25025b1d58c581719446e0c7a1af6b55ab41",
+    "docs/data/attention_sink_s4_stress_20261021_hostile_controls.json": "a300fac4f78fd2569942029ab2325332dd0f6f63f7ff4e041e1daa31072b76f6",
+    "docs/data/attention_sink_s4_stress_20261021_metrics.jsonl": "2abb3f788da8c3bb67fe5d7561440dc29fd9bd687a78b2625d9e3a82e525643e",
+    "docs/data/attention_sink_s4_stress_20261021_positive_control.json": "ce2efec5db3e30b817909d7e3845c460bce0b5d0b4b1e90ea48ebec92334b051",
+    "docs/data/attention_sink_s4_stress_20261021_summary.csv": "a4dada9f85ead9eb6b5eb4b3d35173f02e781b0f1f5ade7c971647916eca5a43",
+    "docs/data/attention_sink_s4_stress_20261021_summary.json": "f7c1527f9df129cb4c42c274f99416379aa569de444b60390f8fa25acb4275de",
+    "exact_colab_execution_source.py": "abf75a07cba8873ff038b12571760d354fcf95b97ccae52b16e2c5bab6a4092b",
+    "experiments/attention_sink_s4.py": "d2d0a863e38c11ba21d4de3421dc055a5bd9e98f5afc58fa123c9f63c37b2367",
+    "experiments/attention_sink_s4_stress.py": "c40bbdb08e384a102dc68a402556f1995cb955891735380f1b645d518a0120db",
+    "experiments/attention_sink_s4_stress_colab.py": "fc05cc6991a324162cf8934d600d3a793b11201b88b7d2b88062b7736cdddf34",
+    "experiments/build_stress_colab.py": "fb1817f4753448aee8f74140e7352147ed21e433db38e723a0d640c13f8e9e19",
+    "experiments/build_stress_controls_colab.py": "979522c4903c29c5c803a529a71d5d248fc4d0361177bcb0ba741a64c90f1d8c",
+    "experiments/summarize_stress.py": "450e0d44908476e098d4436aa93d76cd9f329ffa3de9972c5985ca5a3239e527",
+    "experiments/test_attention_sink_stress_adversaries.py": "d9bce72db37ef108da4a8672b3f07b01582691eb5eac5da9175b0bce888f7685",
+    "experiments/test_attention_sink_stress_adversaries_colab.py": "fbcf0ab4e29ba482a7818bc8909c7b1d53fec013908b8ea1a0d1de8bb3ed81c9"
+  },
+  "induction_gates_passed": 18,
+  "record_type": "GCL_ATTENTION_SINK_STRESS_RECEIPT/1",
+  "run_archive_sha256": "db7a31b424cc587c064bcaf865499362bc1deb8f4f9912e353b6aaf066f3bb34",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "wandb": "Recorded offline; unredacted W&B files excluded from public bundle"
+}
