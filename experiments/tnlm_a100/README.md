@@ -74,3 +74,8 @@ replay ran to completion on verified cached tokens. Results and
 quantitative limitations are in
 `docs/attention_sink_tnlm_fsm_20261021_report.md`. This is a single
 seed and therefore not a replicated finding.
+
+Custody note: the completed FSM baseline replay and S4-only direct replay
+have private offline W&B archives recovered on CHAD. Recovery of the
+S4-plus-column arm's offline W&B binary was not verified; its complete
+public JSONL metrics, config, and summary were captured and admitted.

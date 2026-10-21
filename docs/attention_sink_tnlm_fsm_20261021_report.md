@@ -28,7 +28,13 @@ window ending at step 2000, layer 12).
 The combined regularizer reduced BOS attention by
 58.3% relative to FSM-only, with
 CE512 difference +0.0030.
-For S4 only, BOS share was 5.24%. **S4-only still passed** the sustained sink gate; the strongest-layer sink-head fraction was 25.00% at the final checkpoint. The additional column penalty reduced it to 14.58% and **did not pass** the sustained gate. The combined intervention is therefore materially stronger on this one-seed induction task, although its 1,024-token CE is slightly worse.
+For S4 only, BOS share was 5.24%. S4-only still
+passed the sustained sink gate, with 25.0% of heads in the strongest
+layer exceeding 30% BOS attention at the final checkpoint. The
+combined arm did not pass and ended at 14.58% in its strongest layer.
+The targeted column penalty therefore adds a measurable benefit
+beyond S4 alone under this structural induction. It is not evidence
+of better downstream retrieval.
 
 The original FSM run was interrupted and its incomplete trace excluded;
 the completed replay is used. The first S4-only controller failed
