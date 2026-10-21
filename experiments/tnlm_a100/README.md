@@ -29,6 +29,8 @@ Experimental arms:
   attention deviation from causal-uniform, with all key columns retained.
 - tnlm_s4_col: previous S4 penalty plus fourth-order positive-excess
   attention column concentration penalty.
+- fsm_tnlm_s4 and fsm_tnlm_s4_col: matching regularized arms when
+  only structural force-sink induction produces a qualified sink.
 
 All seed-matched arms see identical training windows and initial weight
 sample fingerprints. AdamW betas=(0.9,0.95), weight_decay=0.1; peak LR 3e-4,

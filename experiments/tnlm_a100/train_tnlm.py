@@ -13,7 +13,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-ARMS=("lm","tnlm","tnlm_s4","tnlm_s4_col","fsm_tnlm")
+ARMS=("lm","tnlm","tnlm_s4","tnlm_s4_col","fsm_tnlm","fsm_tnlm_s4","fsm_tnlm_s4_col")
 EOS=50256
 
 def tnlm_targets(x, objective):
@@ -237,7 +237,7 @@ def main():
         for arm in opts.arms:
             seed_all(seed)
             model=make_model()
-            hook_handles=install_force_sink_mask(model,opts.force_sink_k) if arm=="fsm_tnlm" else []
+            hook_handles=install_force_sink_mask(model,opts.force_sink_k) if arm.startswith("fsm_tnlm") else []
             n_params=sum(p.numel() for p in model.parameters())
             initial_model_sha=hashlib.sha256(torch.cat([
                 p.detach().flatten()[:min(16,p.numel())].float().cpu()
@@ -274,7 +274,7 @@ def main():
                         else:
                             s4,column=attention_losses(output.attentions)
                         loss=ce+opts.lambda_s4*s4*("s4" in arm)
-                        if arm=="tnlm_s4_col":
+                        if arm.endswith("s4_col"):
                             loss=loss+opts.lambda_column*column
                     if not torch.isfinite(loss).item():
                         raise RuntimeError(f"nonfinite step {step} arm {arm} seed {seed}")
