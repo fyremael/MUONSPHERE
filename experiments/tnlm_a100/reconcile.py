@@ -19,15 +19,19 @@ def log(label):
             if x.startswith(label)]
 def stable_gate(rows):
     valid=sorted([r for r in rows if r["step"]>1],key=lambda r:r["step"])
+    candidates=[]
     for layer in range(12):
         for start in range(len(valid)-2):
             seq=valid[start:start+3]
             if all(x["sink_fraction_by_layer"][layer]>=.25 for x in seq):
-                return {"passed":True,"layer":layer,
-                        "steps":[x["step"] for x in seq],
-                        "fractions":[x["sink_fraction_by_layer"][layer] for x in seq]}
-    return {"passed":False,
-      "best_layer_fraction":max(max(x["sink_fraction_by_layer"]) for x in valid)}
+                candidates.append({"passed":True,"layer":layer,
+                    "steps":[x["step"] for x in seq],
+                    "fractions":[x["sink_fraction_by_layer"][layer] for x in seq]})
+    if candidates:
+        return min(candidates,key=lambda c:(c["steps"][-1],c["layer"]))
+    return {"passed":False,"best_layer_fraction":max(
+        max(x["sink_fraction_by_layer"]) for x in valid)}
+
 def load_completed(prefix,arm):
     path=HERE
     status=json.loads((path/(prefix+"-controller-status.json")).read_text())
@@ -77,6 +81,7 @@ def analyze(allow_missing=False):
                         "full_valid_ce":last["valid_ce"]}
         series[arm]=rows
         final[arm]=last
+    assert set(completed)==set(expected), ("missing_complete_arm",completed,expected)
     assert "fsm_tnlm" in series,series.keys()
     gate={name:stable_gate(data) for name,data in series.items()}
     assert gate["fsm_tnlm"]["passed"],gate
@@ -86,7 +91,7 @@ def analyze(allow_missing=False):
             differences[arm]={k:row[k]-final["fsm_tnlm"][k]
                              for k in METRICS}
     report={"record_type":"GCL_TNLM_S4_A100_RECONCILIATION/1",
-            "status":"COMPLETE" if "s4col" in completed else "INCOMPLETE",
+            "status":"COMPLETE" if set(completed)==set(expected) else "INCOMPLETE",
             "seed":101,"random_initialization":True,
             "optimizer":"AdamW","no_injected_attention_logit":True,
             "corpus_document_hash":MANIFEST,

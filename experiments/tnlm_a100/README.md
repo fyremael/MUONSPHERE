@@ -61,3 +61,16 @@ Commands:
 Training and W&B telemetry are stored in the Colab run folder. External
 evidence mirroring saves metrics.jsonl, summary.json, config.json and
 initial.jsonl. The GPU must be explicitly released after evidence capture.
+
+## One-seed calibration results (2026-10-21)
+
+The 4,000-step TNLM-only arm did not reach the prespecified sustained
+sink gate; TNLM plus Force-sink Masking did. The qualifying baseline
+was verified with three successive checkpoints in the same layer.
+The matched S4-only and S4-plus-column regularized arms were also
+completed. The first S4-only controller failed during unnecessary
+corpus preparation; its failed receipt is retained while a direct
+replay ran to completion on verified cached tokens. Results and
+quantitative limitations are in
+`docs/attention_sink_tnlm_fsm_20261021_report.md`. This is a single
+seed and therefore not a replicated finding.

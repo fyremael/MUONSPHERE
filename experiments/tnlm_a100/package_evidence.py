@@ -21,6 +21,11 @@ def main():
         "experiments/tnlm_a100/analyze_induction.py",
         "experiments/tnlm_a100/reconcile.py",
         "experiments/tnlm_a100/package_evidence.py",
+        "experiments/tnlm_a100/launch_s4only_cached.py",
+        "experiments/tnlm_a100/finalize_direct_s4.py",
+        "experiments/tnlm_a100/archive_direct.py",
+        "experiments/tnlm_a100/report.py",
+        "experiments/tnlm_a100/watch_s4only_direct.sh",
         "docs/attention_sink_tnlm_fsm_20261021_report.md",
     ]
     for name in paths:
@@ -34,7 +39,8 @@ def main():
                  "s4col-metrics.jsonl","s4col-summary.json",
                  "s4col-run_status.json","s4col-corpus-manifest.json"]),
       ("optional_s4only",["s4only-config.json","s4only-initial.jsonl",
-                 "s4only-metrics.jsonl","s4only-summary.json","s4only-run_status.json"])]
+                 "s4only-metrics.jsonl","s4only-summary.json","s4only-run_status.json",
+                 "s4only-controller-status.json", "s4only-failed-controller-status.json"])]
     for group,files in evidence:
         for name in files:
             path=HERE/name
