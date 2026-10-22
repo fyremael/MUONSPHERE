@@ -134,4 +134,3 @@ def main():
             print("RETR",length,"copy_lift",round(rz["natural_copy_lift_nats"]["mean"],5),
                   "passkey",round(rz["passkey_fourway_correct"]["mean"],4))
 if __name__=="__main__":main()
-

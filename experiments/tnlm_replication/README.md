@@ -81,3 +81,9 @@ The published seed-101 baseline is an independent reproducibility
 reference but does not substitute for the new seed-101 retrieval
 result. Failed or disconnected jobs must not be counted as complete.
 
+A separate custody controller, `cleanup_after_completion.sh`, checks
+all three completed seed receipts, captures offline W&B and run logs
+into private checksum-audited ZIP files, then releases the two A100
+sessions. A failed archive is reported as recovery required; it does
+not silently mark the session released.
+

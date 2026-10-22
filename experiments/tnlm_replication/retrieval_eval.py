@@ -105,4 +105,3 @@ def measure_retrieval(model,valid_memmap,seed=101,n=24,contexts=(512,1024)):
         agg["passkey_chance"]=0.25
         output[str(length)]=agg
     return output
-
