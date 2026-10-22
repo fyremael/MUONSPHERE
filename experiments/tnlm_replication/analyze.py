@@ -18,13 +18,16 @@ def jl(path):
     return [json.loads(t) for t in path.read_text().splitlines() if t]
 def gate(rows):
     seq=sorted([r for r in rows if r["step"]>1],key=lambda r:r["step"])
+    candidates=[]
     for j in range(12):
         for i in range(len(seq)-2):
             z=seq[i:i+3]
             if all(q["sink_fraction_by_layer"][j]>=.25 for q in z):
-                return dict(passed=True,layer=j+1,
+                candidates.append(dict(passed=True,layer=j+1,
                     steps=[q["step"] for q in z],
-                    fractions=[q["sink_fraction_by_layer"][j] for q in z])
+                    fractions=[q["sink_fraction_by_layer"][j] for q in z]))
+    if candidates:
+        return min(candidates,key=lambda c:(c["steps"][-1],c["layer"]))
     return dict(passed=False,max_layer_head_fraction=max(
         max(r["sink_fraction_by_layer"]) for r in seq))
 
