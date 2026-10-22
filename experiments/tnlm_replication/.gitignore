@@ -1,0 +1,7 @@
+__pycache__/
+receipts/
+watch*.out
+seed*-run.log
+manifest-*.json
+prepare*.log
+*.zip

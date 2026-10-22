@@ -1,0 +1,10 @@
+# Ephemeral Colab transport diagnostics and run output; publish curated evidence separately.
+*.log
+*.exit
+*.launch
+*.jsonl
+*status.json
+*summary.json
+*config.json
+*manifest.json
+*.zip

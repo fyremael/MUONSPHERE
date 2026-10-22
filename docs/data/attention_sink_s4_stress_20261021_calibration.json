@@ -1,0 +1,146 @@
+[
+  {
+    "clean_bos": 0.02689908506969611,
+    "stressed_bos": 0.9644722938537598,
+    "delta_bos": 0.9375732087840637,
+    "stressed_bos_real_share": 0.9644722938537598,
+    "seed": 101,
+    "arm": "adamw"
+  },
+  {
+    "clean_bos": 0.02689908506969611,
+    "stressed_bos": 0.9644722938537598,
+    "delta_bos": 0.9375732087840637,
+    "stressed_bos_real_share": 0.9644722938537598,
+    "seed": 101,
+    "arm": "muon_frob"
+  },
+  {
+    "clean_bos": 0.02689908506969611,
+    "stressed_bos": 0.9644722938537598,
+    "delta_bos": 0.9375732087840637,
+    "stressed_bos_real_share": 0.9644722938537598,
+    "seed": 101,
+    "arm": "muon_s4"
+  },
+  {
+    "clean_bos": 0.02689908506969611,
+    "stressed_bos": 0.9644722938537598,
+    "delta_bos": 0.9375732087840637,
+    "stressed_bos_real_share": 0.9644722938537598,
+    "seed": 101,
+    "arm": "muon_s4_conc"
+  },
+  {
+    "clean_bos": 0.02506124849120776,
+    "stressed_bos": 0.9614120324452718,
+    "delta_bos": 0.9363507839540641,
+    "stressed_bos_real_share": 0.9638125499089559,
+    "seed": 101,
+    "arm": "muon_s4_null"
+  },
+  {
+    "clean_bos": 0.02506124849120776,
+    "stressed_bos": 0.9614120324452718,
+    "delta_bos": 0.9363507839540641,
+    "stressed_bos_real_share": 0.9638125499089559,
+    "seed": 101,
+    "arm": "muon_s4_null_conc"
+  },
+  {
+    "clean_bos": 0.02756952742735545,
+    "stressed_bos": 0.9638544718424479,
+    "delta_bos": 0.9362849444150925,
+    "stressed_bos_real_share": 0.9638544321060181,
+    "seed": 202,
+    "arm": "adamw"
+  },
+  {
+    "clean_bos": 0.02756952742735545,
+    "stressed_bos": 0.9638544718424479,
+    "delta_bos": 0.9362849444150925,
+    "stressed_bos_real_share": 0.9638544321060181,
+    "seed": 202,
+    "arm": "muon_frob"
+  },
+  {
+    "clean_bos": 0.02756952742735545,
+    "stressed_bos": 0.9638544718424479,
+    "delta_bos": 0.9362849444150925,
+    "stressed_bos_real_share": 0.9638544321060181,
+    "seed": 202,
+    "arm": "muon_s4"
+  },
+  {
+    "clean_bos": 0.02756952742735545,
+    "stressed_bos": 0.9638544718424479,
+    "delta_bos": 0.9362849444150925,
+    "stressed_bos_real_share": 0.9638544321060181,
+    "seed": 202,
+    "arm": "muon_s4_conc"
+  },
+  {
+    "clean_bos": 0.025665101284782093,
+    "stressed_bos": 0.9611314137776693,
+    "delta_bos": 0.9354663124928873,
+    "stressed_bos_real_share": 0.9635624488194784,
+    "seed": 202,
+    "arm": "muon_s4_null"
+  },
+  {
+    "clean_bos": 0.025665101284782093,
+    "stressed_bos": 0.9611314137776693,
+    "delta_bos": 0.9354663124928873,
+    "stressed_bos_real_share": 0.9635624488194784,
+    "seed": 202,
+    "arm": "muon_s4_null_conc"
+  },
+  {
+    "clean_bos": 0.027739496280749638,
+    "stressed_bos": 0.9635940591494242,
+    "delta_bos": 0.9358545628686745,
+    "stressed_bos_real_share": 0.9635940591494242,
+    "seed": 303,
+    "arm": "adamw"
+  },
+  {
+    "clean_bos": 0.027739496280749638,
+    "stressed_bos": 0.9635940591494242,
+    "delta_bos": 0.9358545628686745,
+    "stressed_bos_real_share": 0.9635940591494242,
+    "seed": 303,
+    "arm": "muon_frob"
+  },
+  {
+    "clean_bos": 0.027739496280749638,
+    "stressed_bos": 0.9635940591494242,
+    "delta_bos": 0.9358545628686745,
+    "stressed_bos_real_share": 0.9635940591494242,
+    "seed": 303,
+    "arm": "muon_s4"
+  },
+  {
+    "clean_bos": 0.027739496280749638,
+    "stressed_bos": 0.9635940591494242,
+    "delta_bos": 0.9358545628686745,
+    "stressed_bos_real_share": 0.9635940591494242,
+    "seed": 303,
+    "arm": "muon_s4_conc"
+  },
+  {
+    "clean_bos": 0.025882955640554428,
+    "stressed_bos": 0.9607060750325521,
+    "delta_bos": 0.9348231193919977,
+    "stressed_bos_real_share": 0.9631633559862772,
+    "seed": 303,
+    "arm": "muon_s4_null"
+  },
+  {
+    "clean_bos": 0.025882955640554428,
+    "stressed_bos": 0.9607060750325521,
+    "delta_bos": 0.9348231193919977,
+    "stressed_bos_real_share": 0.9631633559862772,
+    "seed": 303,
+    "arm": "muon_s4_null_conc"
+  }
+]

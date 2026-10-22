@@ -1,0 +1,10 @@
+*.log
+*.exit
+*.launch
+*live*
+*status.json
+*summary.json
+*config.json
+*manifest.json
+*.jsonl
+*.zip

@@ -1,0 +1,50 @@
+{
+  "diffuse": {
+    "bos_excess": -2.2351741291171123e-10,
+    "bos_mass": 0.027329886332154274,
+    "bos_real_share": 0.027329886332154274,
+    "fourth_order": 1.0814098033633871e-33,
+    "high_sink_head_fraction": 0.0,
+    "max_column_real_share": 0.027329886332154274,
+    "nonbos_real_share": 0.9726700782775879,
+    "null_mass": 9.53674295089968e-09,
+    "source_key_mass": 0.027329888194799423,
+    "source_key_real_share": 0.027329886332154274
+  },
+  "null_hide": {
+    "bos_excess": 0.00032607425237074494,
+    "bos_mass": 0.0003353486827109009,
+    "bos_real_share": 0.987746000289917,
+    "fourth_order": 5.652791602861473e-13,
+    "high_sink_head_fraction": 1.0,
+    "max_column_real_share": 0.9877458810806274,
+    "nonbos_real_share": 0.012254088185727596,
+    "null_mass": 0.9996604919433594,
+    "source_key_mass": 1.1249695575088481e-07,
+    "source_key_real_share": 0.0003313518245704472
+  },
+  "relocated": {
+    "bos_excess": -0.009347580373287201,
+    "bos_mass": 0.017982302233576775,
+    "bos_real_share": 0.017982305958867073,
+    "fourth_order": 41.49996566772461,
+    "high_sink_head_fraction": 0.0,
+    "max_column_real_share": 0.9818005561828613,
+    "nonbos_real_share": 0.9820176959037781,
+    "null_mass": 1.3113022134803032e-07,
+    "source_key_mass": 0.03928065672516823,
+    "source_key_real_share": 0.03928065672516823
+  },
+  "sink": {
+    "bos_excess": 0.960415780544281,
+    "bos_mass": 0.9877457618713379,
+    "bos_real_share": 0.9877456426620483,
+    "fourth_order": 42.541866302490234,
+    "high_sink_head_fraction": 1.0,
+    "max_column_real_share": 0.9877456426620483,
+    "nonbos_real_share": 0.012254335917532444,
+    "null_mass": 3.099441414633475e-08,
+    "source_key_mass": 0.00033135179546661675,
+    "source_key_real_share": 0.0003313517663627863
+  }
+}

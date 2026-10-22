@@ -1,0 +1,9 @@
+*.log
+*.jsonl
+*status.json
+*summary.json
+*config.json
+corpus_manifest.json
+*.wandb
+*.zip
+*.out

@@ -1,0 +1,35 @@
+{
+  "arms": [
+    "muon_frob",
+    "muon_s4",
+    "muon_s4_conc",
+    "adamw",
+    "adamw_conc"
+  ],
+  "colab_gpu": "NVIDIA A100-SXM4-40GB",
+  "executed_script_sha256": "ee0831998326880ee4063f6a88776da0c2b262b19b607b5224316faf7accbb93",
+  "files_sha256": {
+    "docs/attention_sink_natural_a100_20261021_report.md": "931bb4167f904016cc1c922b7dd81d88bac361e5f8c0ea3cb9e1b348da8272d8",
+    "exact_colab_training_source.py": "ee0831998326880ee4063f6a88776da0c2b262b19b607b5224316faf7accbb93",
+    "experiments/natural_a100/README.md": "b98bb90404080af40cb9e975f294cea1fa3fae1614809409dbc3395ab43f3d37",
+    "experiments/natural_a100/analyze_results.py": "011fe70d09f5ab7b68558e166ca03888b500c0081c51092e41073bae9e5b2de2",
+    "experiments/natural_a100/prepare_fineweb.py": "1c713d85524d7d063c188426fca109050de0fc915f70a530ee061778cc75b7b1",
+    "experiments/natural_a100/train_natural.py": "9cf59dcb704937d8fb4fbc382aabbfd09c1de1a389a79db7d1240690b39dbe4f",
+    "results/analysis.json": "7b2fff428aa0a6cd5f797fcbe5930b1f5c9a6ce1bf0b4bd8db91dc4f49ee3844",
+    "results/config.json": "f53f346baf2e6bb6ab90aa87edf40232f0ce7bb1cef8f2c22d9c1262b36c884c",
+    "results/corpus_manifest.json": "3f142da807205602c607a3fa5e3d1c54cae119da220e93c4df59184f7fe331cc",
+    "results/initial_metrics.jsonl": "8eba04a0d9b0a63a80d8fec4de477ebe60a3e86dbedc882a2010fce8492cdaff",
+    "results/metrics.jsonl": "4fce9bd0b6491eb82da8ea602adb4b2f7d276910fbe2a8dbbf638c1ce7a56e90",
+    "results/run_status.json": "42a54702fa1c3df81d8a881d2ded7b05fe529090d73b9279cb0312a8575aa2fe",
+    "results/summary.json": "186f83475878e5e6b6734584bb56e1a4f26476cdfc5e79c9b91d7ec166be151a"
+  },
+  "n_runs": 15,
+  "notes": "W&B offline binary retained in private CHAD archive, not in public GitHub bundle",
+  "record_type": "GCL_NATURAL_ATTENTION_SINK_A100_RECEIPT/1",
+  "seed_count": 3,
+  "source_checkpoint": "openai-community/gpt2",
+  "status": "COMPLETE",
+  "train_corpus_sha256": "64476c7399a29ec58688ce383a9db2e23d1a82eb78c306f3c9adc105e80983d4",
+  "train_pretrained_not_random_init": true,
+  "valid_corpus_sha256": "88d9d113d8d3fb06d084e69d248ea07d6c4b1128a17c560d49ecd019dcb6f77e"
+}
