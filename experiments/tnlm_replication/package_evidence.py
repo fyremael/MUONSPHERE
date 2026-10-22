@@ -19,6 +19,11 @@ SOURCE=(
  'experiments/tnlm_replication/package_evidence.py',
  'experiments/tnlm_replication/archive_private.py',
  'experiments/tnlm_replication/watch_seed.sh',
+ 'experiments/tnlm_replication/cleanup_after_completion.sh',
+ 'experiments/tnlm_replication/launch_101.py',
+ 'experiments/tnlm_replication/launch_202.py',
+ 'experiments/tnlm_replication/launch_303.py',
+ 'experiments/tnlm_replication/write_report.py',
  'docs/attention_sink_tnlm_fsm_three_seed_retrieval_report.md'
 )
 
