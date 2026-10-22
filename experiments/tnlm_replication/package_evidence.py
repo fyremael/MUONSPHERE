@@ -44,7 +44,12 @@ def main():
         hashes=dict(line.split(' ',1) for line in
                     (root/'sources.sha256').read_text().splitlines())
         assert hashes[sha(files['source/experiments/tnlm_replication/train_replicate.py'])]=='/content/gcl_rep_train.py'
-        assert hashes[sha(files['source/experiments/tnlm_replication/retrieval_eval.py'])]=='/content/retrieval_eval.py'
+        # The deployed retrieval source carried one extra trailing newline,
+        # removed by a subsequent whitespace-only repository cleanup.
+        # Preserve both current readable source and exact executed bytes.
+        deployed_retrieval=files['source/experiments/tnlm_replication/retrieval_eval.py']+b"\n"
+        assert hashes[sha(deployed_retrieval)]=='/content/retrieval_eval.py'
+        files['source/exact_executed_retrieval_eval.py']=deployed_retrieval
         config=json.loads((root/'config.json').read_text())
         common_sha.add(config['corpus']['manifest_sha256'])
     assert len(common_sha)==1
